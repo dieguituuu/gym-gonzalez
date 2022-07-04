@@ -12,13 +12,13 @@ html, body {
 
 body {
     background-color: rgb(239, 241, 241);
-    /* display: grid;
+    display: grid;
     flex-direction: column;
     justify-content: stretch;
     grid-template-areas: 
     "header     header      header"
     "main       main        main"
-    "footer     footer      footer"; */
+    "footer     footer      footer";
 }
 
 main {
@@ -135,10 +135,9 @@ span {
 
 .card1 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* position: relative; */
-    /* justify-content: space-between;
-    align-items: center; */
+   grid-template-columns: repeat(2, 300px);
+   grid-auto-rows: 400px;
+   justify-content: center;
 }
 
 .card2 {
@@ -154,13 +153,21 @@ span {
     box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
 }
 
+.card4 {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(4, 300px);
+    justify-content: space-around;
+    transition: transform 0.3s;
+}
+
 .card--border {
     border: 2px solid black;
 }
 
 .card__down {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
 }
 
 .footer {
@@ -219,21 +226,18 @@ span {
     font-size: 20px;
 }
 
-.grid {
-    display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
-}
-
 @media (max-width: 1010px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
+    .card1 {
+        grid-template-columns: repeat(2, 150px);
         grid-template-rows: repeat(4, 1fr);
+        flex-direction: column;
+        justify-content: space-around;
     }
 
-    .card__down {
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
+    .card4 {
+        grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
 @media (max-width: 768px) {
@@ -245,14 +249,27 @@ span {
         display: none;
     }
 
-    .grid {
-        grid-template-rows: 1fr;
+    .card1 {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+        justify-content: space-evenly;
+    }
+
+    .card4 {
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: space-evenly;
+        padding-bottom: 20px;
     }
 }
 
 @media (max-width: 480px) {
     .grid {
         grid-template-columns: 1fr;
+    }
+
+    .card4 {
+        grid-template-columns: 1fr;
+        padding-bottom: 20px;
     }
 }
