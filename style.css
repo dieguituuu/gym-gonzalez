@@ -226,6 +226,11 @@ span {
     font-size: 20px;
 }
 
+.contact__center {
+    display: grid;
+    justify-content: center;
+}
+
 @media (max-width: 1010px) {
     .card1 {
         grid-template-columns: repeat(2, 150px);
