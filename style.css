@@ -80,6 +80,10 @@ span {
     font-weight: bold;
   }
 
+  .burger {
+    display: none;
+  }
+
 .main {
     display: flex;
     justify-content: space-between; 
@@ -116,6 +120,11 @@ span {
     box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
     height: 300px;
     transition: transform 0.3s;
+}
+
+.card img {
+    width: 140px;
+    height: 140px;
 }
 
 .card:hover {
@@ -155,10 +164,11 @@ span {
 
 .card4 {
     display: grid;
-    grid-template-columns: repeat(4, 300px);
-    grid-template-rows: repeat(4, 300px);
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(auto, 500px);
     justify-content: space-around;
     transition: transform 0.3s;
+    gap: 20px;
 }
 
 .card--border {
@@ -265,6 +275,17 @@ span {
         grid-template-rows: repeat(2, 1fr);
         justify-content: space-evenly;
         padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 530px) {
+    .burger {
+        display: flex;
+        position: relative;
+    }
+
+    .header__content--navbar {
+        display: none;
     }
 }
 
