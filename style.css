@@ -175,11 +175,6 @@ span {
     border: 2px solid black;
 }
 
-.card__down {
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
-}
-
 .footer {
     background-color: black;
 }
@@ -265,7 +260,7 @@ span {
     }
 
     .card1 {
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-template-columns: 1fr;
         justify-content: space-evenly;
     }
@@ -275,6 +270,12 @@ span {
         grid-template-rows: repeat(2, 1fr);
         justify-content: space-evenly;
         padding-bottom: 20px;
+    }
+
+    .card__down {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
