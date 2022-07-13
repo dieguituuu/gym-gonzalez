@@ -1,0 +1,22 @@
+{
+  "name": "gym-gonzalez",
+  "version": "1.0.0",
+  "description": "Gimnasio Gonzalez, proyecto CH",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass ./sass/style.scss ./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dieguituuu/gym-gonzalez.git"
+  },
+  "author": "Diego Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dieguituuu/gym-gonzalez/issues"
+  },
+  "homepage": "https://github.com/dieguituuu/gym-gonzalez#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

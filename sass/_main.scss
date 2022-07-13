@@ -1,0 +1,22 @@
+.main {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+
+    &--image {
+        background-image: url(./assets/fondogris.jpg);
+    }
+}
+
+.main1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column wrap;
+    margin: 50px;
+}
+
+.main2 {
+    display: flex;
+    justify-content: center;
+}
