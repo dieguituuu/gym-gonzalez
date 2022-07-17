@@ -60,3 +60,38 @@
     transition: transform 0.3s;
     gap: 20px;
 }
+
+.btn-base {
+    padding: 5px;
+    border-radius: 7px;
+    font-family: $letraLato;
+}
+
+.button {
+    @extend .btn-base;
+    transition: all 0.3s;
+    
+    &:hover {
+        background: rgb(0, 133, 0);
+        font-weight: $letraBold;
+        color: $letraHeader;
+    }
+}
+
+@mixin btn1-base {
+    padding: 5px;
+    border-radius: 10px;
+    font-family: $letraLato;
+    border: 2px solid black;
+}
+
+.button1 {
+    @include btn1-base;
+    transition: all 0.3s;
+
+    &:hover {
+        background: rgb(237, 133, 0);
+        font-weight: $letraBold;
+        color: $letraHeader;
+    }
+}

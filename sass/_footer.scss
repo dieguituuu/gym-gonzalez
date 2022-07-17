@@ -8,3 +8,19 @@
     }
 }
 
+$redesSociales: (
+    facebook: #3b5998,
+    instagram: #c92d8f,
+    whatsapp: #25D366,
+);
+
+@each $nombre, $color in $redesSociales {
+    .link-#{$nombre} {
+        margin: 0 5px;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+        background: $color;
+    }
+}

@@ -148,12 +148,59 @@ span {
   transition: transform 0.3s;
   gap: 20px; }
 
+.btn-base, .button {
+  padding: 5px;
+  border-radius: 7px;
+  font-family: "Lato", sans-serif; }
+
+.button {
+  transition: all 0.3s; }
+  .button:hover {
+    background: #008500;
+    font-weight: bold;
+    color: #e2e8f0; }
+
+.button1 {
+  padding: 5px;
+  border-radius: 10px;
+  font-family: "Lato", sans-serif;
+  border: 2px solid black;
+  transition: all 0.3s; }
+  .button1:hover {
+    background: #ed8500;
+    font-weight: bold;
+    color: #e2e8f0; }
+
 .footer {
   background-color: black; }
   .footer__content {
     display: flex;
     justify-content: space-around;
     text-align: center; }
+
+.link-facebook {
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  background: #3b5998; }
+
+.link-instagram {
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  background: #c92d8f; }
+
+.link-whatsapp {
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  background: #25D366; }
 
 @media (max-width: 1010px) {
   .card1 {
