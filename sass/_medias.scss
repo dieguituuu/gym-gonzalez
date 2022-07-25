@@ -18,7 +18,11 @@
     }
 
     ul {
-        display: none;
+       font-size: 18px;
+    }
+
+    .letra {
+        font-size: 22px;
     }
 
     .card1 {
@@ -41,14 +45,23 @@
     }
 }
 
-@media (max-width: 530px) {
-    .burger {
-        display: flex;
-        position: relative;
+@media (max-width: 560px) {
+    ul {
+        font-size: 14px;
     }
 
-    .header__content--navbar {
-        display: none;
+    .letra {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 490px) {
+    ul {
+        font-size: 10px;
+    }
+
+    .letra {
+        font-size: 14px;
     }
 }
 
