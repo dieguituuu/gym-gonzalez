@@ -1,10 +1,12 @@
 .main {
-    display: flex;
+    display: grid;
     justify-content: space-between; 
     flex-wrap: wrap;
+    justify-self: center;
 
-    &--image {
-        background-image: url(./assets/fondogris.jpg);
+    &-mdf {
+        display: flex;
+        justify-content: center;
     }
 }
 

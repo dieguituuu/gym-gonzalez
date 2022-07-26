@@ -3,7 +3,7 @@
   margin: 0;
   font-family: 'Lato', sans-serif; }
 
-html, body, main {
+html, body {
   height: 100%;
   margin: 0;
   overflow: auto; }
@@ -11,8 +11,8 @@ html, body, main {
 body {
   background-color: #eff1f1;
   display: grid;
-  flex-direction: column;
   justify-content: stretch;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas: "header     header      header" "main       main        main" "footer     footer      footer"; }
 
 main {
@@ -60,6 +60,10 @@ span {
   width: 600px;
   height: 450px; }
 
+.letra1 {
+  color: black;
+  font-size: 30px; }
+
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -83,11 +87,13 @@ span {
   font-family: "Lato", sans-serif; }
 
 .main {
-  display: flex;
+  display: grid;
   justify-content: space-between;
-  flex-wrap: wrap; }
-  .main--image {
-    background-image: url(./assets/fondogris.jpg); }
+  flex-wrap: wrap;
+  justify-self: center; }
+  .main-mdf {
+    display: flex;
+    justify-content: center; }
 
 .main1 {
   display: flex;
@@ -180,6 +186,9 @@ span {
     display: flex;
     justify-content: space-around;
     text-align: center; }
+    .footer__content-contact {
+      text-decoration: none;
+      color: #fff; }
 
 .link-facebook {
   margin: 0 5px;
@@ -219,8 +228,6 @@ span {
     flex-direction: column; }
   ul {
     font-size: 18px; }
-  .letra {
-    font-size: 22px; }
   .card1 {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: 1fr;
@@ -233,7 +240,12 @@ span {
   .card__down {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .map {
+    width: 400px;
+    height: 300px; }
+  .letra1 {
+    font-size: 20px; } }
 
 @media (max-width: 560px) {
   ul {
@@ -252,4 +264,7 @@ span {
     grid-template-columns: 1fr; }
   .card4 {
     grid-template-columns: 1fr;
-    padding-bottom: 20px; } }
+    padding-bottom: 20px; }
+  .map {
+    width: 300px;
+    height: 235px; } }

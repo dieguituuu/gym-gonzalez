@@ -6,6 +6,11 @@
         display: flex;
         justify-content: space-around;
         text-align: center;
+
+        &-contact {
+            text-decoration: none;
+            color: #fff;
+        }
     }
 }
 
@@ -25,3 +30,4 @@ $redesSociales: (
         background: $color;
     }
 }
+

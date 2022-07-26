@@ -21,10 +21,6 @@
        font-size: 18px;
     }
 
-    .letra {
-        font-size: 22px;
-    }
-
     .card1 {
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: 1fr;
@@ -42,6 +38,15 @@
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .map {
+        width: 400px;
+        height: 300px;
+    }
+
+    .letra1 {
+        font-size: 20px;
     }
 }
 
@@ -73,5 +78,10 @@
     .card4 {
         grid-template-columns: 1fr;
         padding-bottom: 20px;
+    }
+
+    .map {
+        width: 300px;
+        height: 235px;
     }
 }
