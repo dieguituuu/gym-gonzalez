@@ -19,12 +19,46 @@
                 font-weight: $letraBold; 
             }
         }
+
+        &-mobile {
+            display: none;
+
+            &:hover > ul  {
+                display: block;
+            }
+
+            i {
+                font-size: 35px;
+                color: #fff;
+            }
+
+            ul {
+                display: none;
+                position: absolute;
+                right: 0;
+                width: 100%;
+                background-color: grey;
+                flex-direction: column;
+
+                li {
+                    padding: 25px 0;
+                    text-align: center;
+                    justify-content: space-between;
+
+                    a {
+                        color: #fff;
+                        font-weight: bold;
+                        transition: all 0.3s;
+
+                        &:hover {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
-
-.burger {
-    display: none;
-  }
 
 .letra {
     color: $letraHeader;

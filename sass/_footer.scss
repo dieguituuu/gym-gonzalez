@@ -22,9 +22,9 @@ $redesSociales: (
 
 @each $nombre, $color in $redesSociales {
     .link-#{$nombre} {
-        margin: 0 5px;
+        margin: 0 10px;
         padding: 10px;
-        border-radius: 10px;
+        border-radius: 20px;
         color: white;
         text-decoration: none;
         background: $color;
